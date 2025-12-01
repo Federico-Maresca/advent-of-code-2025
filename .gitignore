@@ -1,0 +1,85 @@
+# ----------------------------------------------------------------------
+# 1. Dependency/Build Artifact Directories
+# ----------------------------------------------------------------------
+
+# Node.js
+/node_modules
+/dist
+/build
+/out
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Java/Maven/Gradle
+/target/
+/bin/
+.gradle/
+*.class
+
+# Ruby
+/vendor/bundle
+
+# General build output
+/temp/
+/tmp/
+*.log
+*.zip
+*.tar
+*.rar
+
+# ----------------------------------------------------------------------
+# 2. Operating System Files
+# ----------------------------------------------------------------------
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+# Generally not needed, but can include system-specific temp files if encountered
+
+# ----------------------------------------------------------------------
+# 3. IDE and Editor Configuration Files
+# ----------------------------------------------------------------------
+
+# Visual Studio Code
+.vscode/
+
+# JetBrains IDEs (IntelliJ, PyCharm, WebStorm, etc.)
+.idea/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*~
+*.swp
+.netrwhist
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# ----------------------------------------------------------------------
+# 4. Sensitive and Local Environment Files
+# ----------------------------------------------------------------------
+
+# Environment variables
+.env
+.local.env
+
+# Keys and credentials (Be extremely careful with these)
+*.key
+*.pem
+*.pfx
