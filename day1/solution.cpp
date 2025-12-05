@@ -70,7 +70,7 @@ namespace
         // 2. Initialize state for the reduction
         uint8_t current_pos = START_POS;
 
-        // 3. Use std::accumulate (or a similar algorithm) for the range reduction
+        // 3. Use std::accumulate for the range reduction
         // This accumulates the zero crossings while modifying the current_pos state.
         secondPW = std::accumulate(
             rotation_lines.begin(),
