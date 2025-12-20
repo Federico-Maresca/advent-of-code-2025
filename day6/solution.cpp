@@ -11,7 +11,7 @@ constexpr char ADD = '+';
 constexpr char MUL = '*';
 constexpr char DELIM = ' ';
 
-void getLastLine(const std::string &fileName, std::string &operations, std::vector<std::vector<long>> &problems)
+void readFiles(const std::string &fileName, std::string &operations, std::vector<std::vector<long>> &problems)
 {
     std::ifstream infile(fileName, std::ios::ate); // open file and seek end
     infile.seekg(-1, std::ios::end);
@@ -126,10 +126,9 @@ int main(int argc, char **argv)
 {
     std::vector<long> results1;
     std::string operations;
-    // read(argv[1], results, operations);
     std::vector<uint8_t> numberSizes;
     std::vector<std::vector<long>> results2;
-    getLastLine("input", operations, results2);
+    readFiles("input", operations, results2);
     solve1("input", operations);
     solve2("input", results2, operations);
 }
